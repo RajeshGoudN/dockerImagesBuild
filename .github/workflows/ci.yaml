@@ -1,5 +1,9 @@
 name: Build and push Docker image to DockerHub
-on: push
+on:
+  push:
+    branches:
+      - main  # Trigger for the main branch
+  workflow_dispatch:
 jobs:
   push_to_repository:
     name: Push Docker image to DockerHub
@@ -19,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: rajesh365/myprojectrepo:0
+          tags: rajesh365/myprojectrepo:1.0
