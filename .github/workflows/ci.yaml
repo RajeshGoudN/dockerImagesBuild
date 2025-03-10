@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: rajesh365/myprojectrepo:1.0
+          tags: rajesh365/myprojectrepo:2.0
